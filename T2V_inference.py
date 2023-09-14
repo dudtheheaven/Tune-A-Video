@@ -50,7 +50,7 @@ import json
 with open('categoized_captions_1.json', 'r') as f:
     caption_dict = json.load(f)
     
-categories = ['drought', 'earthquake']
+categories = ['volcano']
 for category in categories:
     category_dir = os.path.join("generated_outputs", category)
     video_dir = os.path.join(category_dir, "videos")

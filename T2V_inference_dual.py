@@ -86,8 +86,8 @@ def run_inference(rank, world_size):
     with open('categoized_captions_1.json', 'r') as f:
         caption_dict = json.load(f)
     
-    categories = ['fire', 'flood', 'fog', 'landslide', 'snow', 'storm', 'thunder', 'tsunami']
-    for category_idx in range(0, len(categories), 2):
+    categories = ['volcano']
+    for category_idx in range(0, len(categories)):
         category = categories[category_idx + rank]
         # print(category)
         # print(category_idx)
